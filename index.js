@@ -35,9 +35,9 @@ app.use("/rest/api/auth", AuthRouter);
 app.use("/rest/api/category", CategoryRouter);
 app.use("/rest/api/user", UserRouter);
 
-mongoose
+/* mongoose
   .connect(process.env.MONGO_URL)
   .then(() => console.log("Db connected"))
-  .catch((error) => console.log(error));
+  .catch((error) => console.log(error)); */
 
 app.listen(5000, () => console.log("Listening to port"));
